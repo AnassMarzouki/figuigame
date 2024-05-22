@@ -1,6 +1,5 @@
 //import logo from './logo.svg';
 import './App.css';
-import Quiz from './quiz';
 import React from 'react'
 //import fetchAPI from './fetchAPI';
 import GameOver from './gameOver';
@@ -58,7 +57,6 @@ function App() {
     }
 
   
-    const playNow = true
 
     function launchGame (){
       console.log(gameStart)
@@ -81,7 +79,7 @@ function App() {
             <span className='difficulty-word'>Difficulty </span><span className= {questionData[currentQuestion].difficulty==='easy' ? 'diff-easy' : questionData[currentQuestion].difficulty==='medium' ? 'diff-medium' : 'diff-hard'}>{questionData[currentQuestion].difficulty}</span>
           </div>
           <div className="img-container">
-            <img className='question-image' src={questionData[currentQuestion].questionImage}></img>
+            <img className='question-image'  alt="" src={questionData[currentQuestion].questionImage}></img>
           </div>
 
           <div className='answers-button-container'>
