@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-image: url('images/bg.png');
+  font-family: 'Poppins';
+}
+
+.welcome-page {
+  
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.welcome-page > h1, h4, h5 {
+  text-align: center;
+  font-family: 'Poppins';
+
+}
+
+.welcome-page > button {
+  background-color: #6a1b9a;
+  color: white;
+  font-size: large;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-family: 'Poppins';
+  cursor: pointer;
+
+}
+
+.global-container{
+  margin-top: 3em;
+}
+.question-count{
+  text-align: center;
+}
+
+.question-asked {
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.current-question{
+  text-align: center;
+  font-style: italic;
+  font-family: 'Poppins';
+}
+
+.difficulty-tags {
+  
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+
+.difficulty-word{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.1em;
+  border-radius: 10%;
+  font-family: 'Poppins';
+  background-color: rgb(226, 224, 224);
+
+}
+.diff-easy, .diff-medium, .diff-hard {
+  font-family: 'Poppins';
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10%;
+  margin-left: 0.2em;
+  padding-bottom: 0.1em;
+}
+
+.diff-easy {
+  background-color: greenyellow;
+}
+
+.diff-medium {
+  background-color: yellow;
+}
+
+.diff-hard {
+  background-color: red;
+}
+
+.img-container {
+  
+  width:300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container > .question-image {
+
+  width:300px;
+  height: 300px;
+  object-fit: cover;
+  
+}
+
+.answers-button-container {
+  
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.5em;
+  align-content: center;
+  justify-items: center;
+
+  
+  font-size: large;
+}
+
+.answer-btn{
+  width:8em;
+  height: 3.2em;
+  background-color:  #dfe2e2;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer-btn:active{
+  width:8em;
+  height: 3.2em;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.progress-bar {
+  margin-left: 4em;
+}
+
+.game-over-screen{
+  
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.stars {
+  color: goldenrod;
+  margin-left: auto;
+  margin-right: auto;
+  width:6em;
+}
+
+.game-over-screen > h1, h3, p {
+  text-align: center;
+}
+
+.game-over-screen > button {
+  font-size: large;
+  background-color: #6a1b9a;
+  font-family: 'Poppins';
+  color:white;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 9em;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
